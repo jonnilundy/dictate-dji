@@ -1,4 +1,4 @@
-# dji-mic-dictation-button
+# dictate-dji
 
 Turn the Link button on a DJI Mic into a dictation hotkey on macOS. No Karabiner, no kernel extension, no Accessibility permission.
 
@@ -17,8 +17,8 @@ Right Control was chosen because MacBook keyboards do not have one, so it collid
 Needs Xcode Command Line Tools (`xcode-select --install`).
 
 ```sh
-git clone https://github.com/jonnilundy/dji-mic-dictation-button.git
-cd dji-mic-dictation-button
+git clone https://github.com/jonnilundy/dictate-dji.git
+cd dictate-dji
 ./install.sh
 ```
 
