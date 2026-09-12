@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.dji-mic-remap</string>
+  <key>ProgramArguments</key>
+  <array><string>__HOME__/.local/libexec/dji-mic-remap</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><dict><key>SuccessfulExit</key><false/></dict>
+  <key>ProcessType</key><string>Background</string>
+  <key>ThrottleInterval</key><integer>10</integer>
+  <key>LaunchEvents</key>
+  <dict>
+    <key>com.apple.iokit.matching</key>
+    <dict>
+      <key>com.dji-mic-remap.connected</key>
+      <dict>
+        <key>IOMatchLaunchStream</key><true/>
+        <key>IONotificationType</key><string>IOServicePublish</string>
+        <key>IOProviderClass</key><string>IOHIDEventService</string>
+        <key>VendorID</key><integer>11427</integer>
+        <key>ProductID</key><integer>16401</integer>
+      </dict>
+    </dict>
+  </dict>
+  <key>StandardOutPath</key><string>__HOME__/.local/state/log/dji-mic-remap.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/.local/state/log/dji-mic-remap.log</string>
+</dict>
+</plist>
